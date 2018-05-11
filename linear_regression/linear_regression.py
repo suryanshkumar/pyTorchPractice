@@ -34,11 +34,15 @@ def estimate_mse(x_data, y_data, w, N):
 x_data = [1, 2, 3, 4]
 y_data = [2, 4, 6, 8]
 N = len(y_data)
+mse_error= []
+wei_val  = []
 
 for w in np.arange(0.0, 4.5, 0.5):
     mse = estimate_mse(x_data, y_data, w, N)
     print("Mean Square Error with parameter w = " +str(w) + " is " + str(mse))
-    plt.plot(w, mse, 'ro')
+    mse_error.append(mse)
+    wei_val.append(w)
+plt.plot(wei_val, mse_error, 'ro-')
 plt.xlabel("parameter (w) value")
 plt.ylabel("Mean Squared Error Loss")
 plt.title("Error prediction curve")
