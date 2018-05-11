@@ -44,7 +44,7 @@ plt.ylabel("Mean Squared Error Loss")
 plt.title("Error prediction curve")
 plt.show()
 
-#Summary: In this example we change the value of w and can see that the error value is minimum for w = 2
+#Summary: In this example I changed the value of w and can see that the error value is minimum for w = 2
 #However, it would be better if a program can automatically figure out the value for which the error is minimum
 #which motivated me to investigate as to how I can find this 'w' value for which the error will be minimum
 #Possibly, I have to go through the theory of mathemantical optimization to figure this out.
